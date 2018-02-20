@@ -1,4 +1,4 @@
-FROM drydock/u14:master
+FROM drydock/c7:master
 
 ADD . /c7all
 
