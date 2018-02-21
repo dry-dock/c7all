@@ -10,6 +10,10 @@ done
 mkdir -p /var/lib/neo4j/conf
 cd /c7all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
 
+echo "================= Adding mysql cnf ==================="
+cd /c7all && cp -rf my.cnf /etc/my.cnf
+
+
 echo "================= Adding shippable_service ==================="
 mkdir -p /usr/local/bin/shippable_services
 cp /c7all/services/* /usr/local/bin/shippable_services
