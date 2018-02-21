@@ -3,6 +3,8 @@
 
 set -e
 
+sudo yum install -y dpkg-devel dpkg-dev
+
 # ensure elasticsearch user exists
 useradd elasticsearch
 
