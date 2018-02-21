@@ -1,0 +1,4 @@
+
+#!/bin/bash
+
+gosu elasticsearch /usr/local/elasticsearch/bin/elasticsearch $@
