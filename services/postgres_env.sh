@@ -14,7 +14,7 @@ if [ -z "$SHIPPABLE_POSTGRES_VERSION" ]; then
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_BINARY" ]; then
-  export SHIPPABLE_POSTGRES_BINARY="/usr/lib/postgresql/$SHIPPABLE_POSTGRES_VERSION/bin/postgres";
+  export SHIPPABLE_POSTGRES_BINARY="/usr/pgsql-10/bin/postgres";
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_CMD" ]; then
