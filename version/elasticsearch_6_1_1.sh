@@ -17,6 +17,7 @@ gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys B42F6819007F00F
 gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu
 rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc
 chmod +x /usr/local/bin/gosu
+sudo mv /usr/local/bin/gosu /usr/bin
 gosu nobody true
 
 ELASTICSEARCH_VERSION=6.1.1

@@ -6,7 +6,7 @@ if [ -z "$SHIPPABLE_REDIS_PORT" ]; then
 fi
 
 if [ -z "$SHIPPABLE_REDIS_BINARY" ]; then
-  export SHIPPABLE_REDIS_BINARY="/usr/bin/redis-server";
+  export SHIPPABLE_REDIS_BINARY="/usr/local/bin/redis-server";
 fi
 
 if [ -z "$SHIPPABLE_REDIS_CMD" ]; then

@@ -14,11 +14,11 @@ if [ -z "$SHIPPABLE_POSTGRES_VERSION" ]; then
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_BINARY" ]; then
-  export SHIPPABLE_POSTGRES_BINARY="/usr/lib/postgresql/$SHIPPABLE_POSTGRES_VERSION/bin/postgres";
+  export SHIPPABLE_POSTGRES_BINARY="/usr/pgsql-10/bin/postgres";
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_CMD" ]; then
-  export SHIPPABLE_POSTGRES_CMD="sudo -u postgres $SHIPPABLE_POSTGRES_BINARY -c config_file=/etc/postgresql/$SHIPPABLE_POSTGRES_VERSION/main/postgresql.conf";
+  export SHIPPABLE_POSTGRES_CMD="sudo -u postgres $SHIPPABLE_POSTGRES_BINARY -c config_file=/var/lib/pgsql/$SHIPPABLE_POSTGRES_VERSION/data/pg_hba.conf";
 fi
 
 # End service ENV variables
