@@ -1,5 +1,5 @@
 #!/bin/bash -e
-RABBITMQ_VER=3.6.15
+RABBITMQ_VER=19.0.4
 echo "================= Installing RabbitMQ $RABBITMQ_VER ==================="
 wget https://www.rabbitmq.com/releases/erlang/erlang-19.0.4-1.el7.centos.x86_64.rpm
 sudo yum install -y erlang-19.0.4-1.el7.centos.x86_64.rpm
