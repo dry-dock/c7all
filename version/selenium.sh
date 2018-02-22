@@ -1,0 +1,36 @@
+#!/bin/bash -e
+echo "================= Installing chrome ==================="
+echo "[google-chrome]
+name=google-chrome
+baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub" > /etc/yum.repos.d/google-chrome.repo
+sudo yum install -y google-chrome-stable
+
+echo "================= Installing Chrome driver ==================="
+# install latest chromedriver release as we are installing latest stable chrome version
+CHROME_DRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`
+sudo wget http://chromedriver.storage.googleapis.com/"$CHROME_DRIVER_VERSION"/chromedriver_linux64.zip
+sudo unzip chromedriver_linux64.zip && sudo rm -f chromedriver_linux64.zip
+sudo mv chromedriver /usr/local/bin/chromedriver
+sudo chmod a+x /usr/local/bin/chromedriver
+
+echo "================= Installing firefox ==================="
+wget http://ftp.mozilla.org/pub/firefox/releases/58.0/linux-x86_64/en-US/firefox-58.0.tar.bz2
+tar xvjf firefox-58.0.tar.bz2
+sudo ln -s /firefox/firefox /usr/bin/firefox
+
+echo "================= Installing chromium ==================="
+wget https://rpmfind.net/linux/Mandriva/devel/cooker/x86_64/media/main/release/lib64udev0-182-5-mdv2012.0.x86_64.rpm
+sudo yum install lib64udev0-182-5-mdv2012.0.x86_64.rpm
+wget https://people.centos.org/hughesjr/chromium/6/x86_64/RPMS/chromium-28.0.1500.95-213514.x86_64.rpm
+sudo yum install chromium-28.0.1500.95-213514.x86_64.rpm
+
+echo "================= Installing Opera ==================="
+wget http://get.geo.opera.com/pub/opera/linux/1216/opera-12.16-1860.x86_64.rpm
+sudo yum install -y opera-12.16-1860.x86_64.rpm
+
+echo "================= Installing Selenium ==================="
+sudo mkdir /usr/local/selenium >/dev/null 2>&1
+sudo wget http://selenium-release.storage.googleapis.com/3.8/selenium-server-standalone-3.8.1.jar -P /usr/local/selenium
