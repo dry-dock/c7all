@@ -1,4 +1,5 @@
-#!/bin/bash -e
+#!/bin/bash
+set -e
 
 export PATH="$PATH:/usr/local/bin/"
 declare -a services=( 'cassandra' 'memcached' 'mongodb' 'neo4j' 'rabbitmq' 'redis' 'rethinkdb' 'riak' 'selenium')
