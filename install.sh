@@ -23,8 +23,8 @@ cp /c7all/services/* /usr/local/bin/shippable_services
 mv /usr/local/bin/shippable_services/shippable_service /usr/local/bin/shippable_service
 
 echo "================= Adding packages for shippable_service =================="
-wget http://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1-1.i386.rpm
-sudo yum install -y netcat-0.7.1-1.i386.rpm
+wget https://nmap.org/dist/ncat-7.60-1.x86_64.rpm
+sudo yum install -y ncat-7.60-1.x86_64.rpm
 
 
 echo "================= Cleaning package lists ==================="

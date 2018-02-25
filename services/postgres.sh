@@ -17,7 +17,7 @@ start_generic_service() {
     sleep 5
 
     ## check if the service port is reachable
-    while ! nc -vz localhost "$service_port" &>/dev/null; do
+    while ! ncat -vz localhost "$service_port" &>/dev/null; do
 
       ## check service process PID
       service_proc=$(pgrep -f "$binary" || echo "")
