@@ -1,5 +1,5 @@
 #!/bin/bash -e
-REDIS_VER=4.0.8
+REDIS_VER=4.0.9
 echo "================= Installing redis-server ==================="
 wget http://download.redis.io/releases/redis-$REDIS_VER.tar.gz
 tar xzvf redis-$REDIS_VER.tar.gz
