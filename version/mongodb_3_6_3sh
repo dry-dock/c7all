@@ -1,6 +1,6 @@
 #!/bin/bash -e
-MONGO_VERSION=3.6.2
-echo "================= Installing Mongodb 3.6.2 ==================="
+MONGO_VERSION=3.6.3
+echo "================= Installing Mongodb 3.6.3 ==================="
 echo "[mongodb-org-3.6]
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/3.6/x86_64/
