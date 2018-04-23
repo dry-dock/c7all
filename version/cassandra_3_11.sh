@@ -6,5 +6,5 @@ baseurl=https://www.apache.org/dist/cassandra/redhat/311x/
 gpgcheck=1
 repo_gpgcheck=1
 gpgkey=https://www.apache.org/dist/cassandra/KEYS" > /etc/yum.repos.d/cassandra.repo
-rpm --import https://www.apache.org/dist/cassandra/KEYS
+sudo rpm --import https://www.apache.org/dist/cassandra/KEYS
 sudo yum install cassandra
