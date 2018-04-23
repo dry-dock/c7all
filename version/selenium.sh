@@ -6,6 +6,7 @@ baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
 enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub" > /etc/yum.repos.d/google-chrome.repo
+sudo rpm --import https://dl-ssl.google.com/linux/linux_signing_key.pub
 sudo yum install -y google-chrome-stable
 
 echo "================= Installing Chrome driver ==================="

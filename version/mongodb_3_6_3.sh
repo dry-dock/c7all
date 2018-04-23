@@ -7,6 +7,7 @@ baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/3.6/x86_64/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org.repo
+sudo rpm --import https://www.mongodb.org/static/pgp/server-3.6.asc
 sudo yum install -y mongodb-org="$MONGO_VERSION" \
 	mongodb-org-server-"$MONGO_VERSION" \
 	mongodb-org-shell-"$MONGO_VERSION" \
