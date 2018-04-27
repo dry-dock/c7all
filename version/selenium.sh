@@ -1,13 +1,8 @@
 #!/bin/bash -e
 echo "================= Installing chrome ==================="
-echo "[google-chrome]
-name=google-chrome
-baseurl=http://dl.google.com/linux/chrome/rpm/stable/x86_64
-enabled=1
-gpgcheck=1
-gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub" > /etc/yum.repos.d/google-chrome.repo
-sudo rpm --import https://dl-ssl.google.com/linux/linux_signing_key.pub
-sudo yum install -y google-chrome-stable
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+yum localinstall -y google-chrome-stable_current_x86_64.rpm 
+
 
 echo "================= Installing Chrome driver ==================="
 # install latest chromedriver release as we are installing latest stable chrome version
