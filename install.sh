@@ -12,6 +12,7 @@ cd /c7all && cp -rf neo4j-server.properties /var/lib/neo4j/conf/
 
 echo "================= Adding mysql cnf ==================="
 cd /c7all && cp -rf my.cnf /etc/my.cnf
+mysqld --initialize-insecure
 
 POSTGRES_VERSION=10
 echo "================= Adding PostgreSQL cnf ==================="
