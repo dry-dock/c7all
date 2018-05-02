@@ -11,7 +11,7 @@ if [ -z "$SHIPPABLE_MYSQL_PORT" ]; then
 fi
 
 if [ -z "$SHIPPABLE_MYSQL_BINARY" ]; then
-  export SHIPPABLE_MYSQL_BINARY="/usr/bin/mysql";
+  export SHIPPABLE_MYSQL_BINARY="mysqld";
 fi
 
 if [ -z "$SHIPPABLE_MYSQL_CMD" ]; then
