@@ -12,7 +12,7 @@ start_generic_service() {
 
 
   if [ -f "$binary" ]; then
-    sudo su -c "$service_cmd start > /dev/null 2>&1 &";
+    sudo su -c "$service_cmd > /dev/null 2>&1 &";
     sleep 5
 
     ## check if the service port is reachable
