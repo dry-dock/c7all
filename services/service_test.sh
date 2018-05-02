@@ -2,7 +2,7 @@
 set -e
 
 export PATH="$PATH:/usr/local/bin/"
-declare -a services=( 'cassandra' 'memcached' 'mongodb' 'neo4j' 'rabbitmq' 'redis' 'elasticsearch' 'riak' 'selenium')
+declare -a services=( 'cassandra' 'couchdb' 'memcached' 'mongodb' 'neo4j' 'rabbitmq' 'redis' 'elasticsearch' 'riak' 'selenium')
 
 for service in "${services[@]}"
   do
