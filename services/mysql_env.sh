@@ -11,11 +11,11 @@ if [ -z "$SHIPPABLE_MYSQL_PORT" ]; then
 fi
 
 if [ -z "$SHIPPABLE_MYSQL_BINARY" ]; then
-  export SHIPPABLE_MYSQL_BINARY="mysqld";
+  export SHIPPABLE_MYSQL_BINARY="/usr/sbin/mysqld";
 fi
 
 if [ -z "$SHIPPABLE_MYSQL_CMD" ]; then
-  export SHIPPABLE_MYSQL_CMD="$SHIPPABLE_MYSQL_BINARY";
+  export SHIPPABLE_MYSQL_CMD="mysqld";
 fi
 
 # End service ENV variables
