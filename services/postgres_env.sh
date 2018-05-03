@@ -18,7 +18,7 @@ if [ -z "$SHIPPABLE_POSTGRES_BINARY" ]; then
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_CMD" ]; then
-  export SHIPPABLE_POSTGRES_CMD="sudo -u postgres $SHIPPABLE_POSTGRES_BINARY -c config_file=/var/lib/pgsql/$SHIPPABLE_POSTGRES_VERSION/data/pg_hba.conf";
+  export SHIPPABLE_POSTGRES_CMD="sudo -u postgres /usr/pgsql-10/bin/pg_ctl -D /var/lib/pgsql/data start";
 fi
 
 # End service ENV variables
