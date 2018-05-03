@@ -7,3 +7,4 @@ enabled=1
 gpgcheck=0" > /etc/yum.repos.d/mysql-community.repo
 sudo yum -y install mysql-community-server \
     mysql-community-client
+
