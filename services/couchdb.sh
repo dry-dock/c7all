@@ -48,7 +48,7 @@ elif [ "$service_cmd" = 'stop' ]
 then
   echo "================= Stopping Couchdb ==================="
   printf "\n"
-  kill $(ps aux | grep couchdb | awk '{print $2}') || true
+  kill -9 $(ps aux | grep couchdb | grep -v shippable_service | awk '{print $2}')
   printf "\n\n"
 else
   echo "Failed to execute the action"
