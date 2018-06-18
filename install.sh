@@ -27,6 +27,8 @@ echo "================= Adding packages for shippable_service ==================
 wget https://nmap.org/dist/ncat-7.60-1.x86_64.rpm
 sudo yum install -y ncat-7.60-1.x86_64.rpm
 
+echo "================= Adding pycrypto ============"
+pip install pycrypto
 
 echo "================= Cleaning package lists ==================="
 yum clean expire-cache
