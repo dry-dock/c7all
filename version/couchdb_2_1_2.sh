@@ -1,5 +1,5 @@
 #!/bin/bash -e
-echo "================= Installing Couchdb 2.1.1 ==================="
+echo "================= Installing Couchdb 2.1.2 ==================="
 echo "[bintray--apache-couchdb-rpm]
 name=bintray--apache-couchdb-rpm
 baseurl=http://apache.bintray.com/couchdb-rpm/el7/x86_64/
