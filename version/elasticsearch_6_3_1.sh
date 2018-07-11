@@ -20,7 +20,7 @@ chmod +x /usr/local/bin/gosu
 sudo mv /usr/local/bin/gosu /usr/bin
 gosu nobody true
 
-ELASTICSEARCH_VERSION=6.2.4
+ELASTICSEARCH_VERSION=6.3.1
 #setup elasticsearch
 cd /usr/local/
 
