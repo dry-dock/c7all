@@ -1,13 +1,13 @@
 #!/bin/bash -e
-MONGO_VERSION=3.6.4
-echo "================= Installing Mongodb 3.6.4 ==================="
-echo "[mongodb-org-3.6]
+MONGO_VERSION=4.0.0
+echo "================= Installing Mongodb 4.0.0 ==================="
+echo "[mongodb-org-4.0]
 name=MongoDB Repository
-baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/3.6/x86_64/
+baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.0/x86_64/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc" > /etc/yum.repos.d/mongodb-org.repo
-sudo rpm --import https://www.mongodb.org/static/pgp/server-3.6.asc
+gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc" > /etc/yum.repos.d/mongodb-org.repo
+sudo rpm --import https://www.mongodb.org/static/pgp/server-4.0.asc
 sudo yum install -y mongodb-org="$MONGO_VERSION" \
 	mongodb-org-server-"$MONGO_VERSION" \
 	mongodb-org-shell-"$MONGO_VERSION" \
