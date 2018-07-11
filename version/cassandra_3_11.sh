@@ -1,5 +1,5 @@
 #!/bin/bash -e
-echo "================= Installing Cassandra 3.11.2 ==================="
+echo "================= Installing Cassandra 3.11 ==================="
 echo "[cassandra]
 name=Apache Cassandra
 baseurl=https://www.apache.org/dist/cassandra/redhat/311x/
