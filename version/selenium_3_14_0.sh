@@ -20,8 +20,8 @@ sudo ln -s /firefox/firefox /usr/bin/firefox
 echo "================= Installing chromium ==================="
 wget https://rpmfind.net/linux/Mandriva/devel/cooker/x86_64/media/main/release/lib64udev0-182-5-mdv2012.0.x86_64.rpm
 sudo yum install lib64udev0-182-5-mdv2012.0.x86_64.rpm
-wget https://people.centos.org/hughesjr/chromium/6/x86_64/RPMS/chromium-28.0.1500.95-213514.x86_64.rpm
-sudo yum install chromium-28.0.1500.95-213514.x86_64.rpm
+wget https://centos.pkgs.org/7/russian-fedora-fixes-updates-x86_64/chromium-67.0.3396.99-1.el7.R.x86_64.rpm.html
+sudo yum install chromium
 
 echo "================= Installing Opera ==================="
 wget http://get.geo.opera.com/pub/opera/linux/1216/opera-12.16-1860.x86_64.rpm
@@ -29,4 +29,4 @@ sudo yum install -y opera-12.16-1860.x86_64.rpm
 
 echo "================= Installing Selenium ==================="
 sudo mkdir /usr/local/selenium >/dev/null 2>&1
-sudo wget http://selenium-release.storage.googleapis.com/3.13/selenium-server-standalone-3.13.0.jar -P /usr/local/selenium
+sudo wget http://selenium-release.storage.googleapis.com/3.14/selenium-server-standalone-3.14.0.jar -P /usr/local/selenium
