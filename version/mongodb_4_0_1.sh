@@ -1,6 +1,6 @@
 #!/bin/bash -e
-MONGO_VERSION=4.0.0
-echo "================= Installing Mongodb 4.0.0 ==================="
+MONGO_VERSION=4.0.1
+echo "================= Installing Mongodb 4.0.1 ==================="
 echo "[mongodb-org-4.0]
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.0/x86_64/
