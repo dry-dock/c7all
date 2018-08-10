@@ -17,11 +17,11 @@ wget http://ftp.mozilla.org/pub/firefox/releases/58.0/linux-x86_64/en-US/firefox
 tar xvjf firefox-58.0.tar.bz2
 sudo ln -s /firefox/firefox /usr/bin/firefox
 
-echo "================= Installing chromium ==================="
-wget https://rpmfind.net/linux/Mandriva/devel/cooker/x86_64/media/main/release/lib64udev0-182-5-mdv2012.0.x86_64.rpm
-sudo yum install lib64udev0-182-5-mdv2012.0.x86_64.rpm
-wget https://people.centos.org/hughesjr/chromium/6/x86_64/RPMS/chromium-28.0.1500.95-213514.x86_64.rpm
-sudo yum install chromium-28.0.1500.95-213514.x86_64.rpm
+#echo "================= Installing chromium ==================="
+#wget https://rpmfind.net/linux/Mandriva/devel/cooker/x86_64/media/main/release/lib64udev0-182-5-mdv2012.0.x86_64.rpm
+#sudo yum install lib64udev0-182-5-mdv2012.0.x86_64.rpm
+#wget https://people.centos.org/hughesjr/chromium/6/x86_64/RPMS/chromium-28.0.1500.95-213514.x86_64.rpm
+#sudo yum install chromium-28.0.1500.95-213514.x86_64.rpm
 
 echo "================= Installing Opera ==================="
 wget http://get.geo.opera.com/pub/opera/linux/1216/opera-12.16-1860.x86_64.rpm
