@@ -1,5 +1,5 @@
 #!/bin/bash -e
-MONGO_VERSION=4.0.1
+MONGO_VERSION=4.0.2
 echo "================= Installing Mongodb 4.0.1 ==================="
 echo "[mongodb-org-4.0]
 name=MongoDB Repository
@@ -18,4 +18,4 @@ sudo yum install -y mongodb-org="$MONGO_VERSION" \
 sudo mkdir -p /data/db
 
 # Pin the current version
-sudo echo "exclude=mongodb-org,mongodb-org-server,mongodb-org-shell,mongodb-org-mongos,mongodb-org-tools" >> /etc/yum.conf 
+sudo echo "exclude=mongodb-org,mongodb-org-server,mongodb-org-shell,mongodb-org-mongos,mongodb-org-tools" >> /etc/yum.conf
