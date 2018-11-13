@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-MEM_VERSION=1.5.11
+MEM_VERSION=1.5.12
 LIB_VERSION=1.0.18
 
 sudo yum install -y libevent-devel
