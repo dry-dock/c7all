@@ -27,6 +27,7 @@ echo "================= Installing Opera ==================="
 wget http://get.geo.opera.com/pub/opera/linux/1216/opera-12.16-1860.x86_64.rpm
 sudo yum install -y opera-12.16-1860.x86_64.rpm
 
+export SELENIUM_VERSION=3.141.59
 echo "================= Installing Selenium ==================="
 sudo mkdir /usr/local/selenium >/dev/null 2>&1
-sudo wget http://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-3.141.59.jar -P /usr/local/selenium
+sudo wget http://selenium-release.storage.googleapis.com/3.141/selenium-server-standalone-"$SELENIUM_VERSION".jar -P /usr/local/selenium
