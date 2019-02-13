@@ -1,5 +1,5 @@
 #!/bin/bash -e
-POSTGRES_VERSION=10
+POSTGRES_VERSION=11
 echo "================= Installing Postgres $POSTGRES_VERSION ==================="
 sudo yum install https://download.postgresql.org/pub/repos/yum/11/redhat/rhel-7-x86_64/pgdg-centos11-11-2.noarch.rpm
 sudo yum install -y postgresql11 \
