@@ -1,5 +1,5 @@
 #!/bin/bash -e
-SQLITE_VER=3.22.0
+SQLITE_VER=3.27.1
 echo "================= Installing sqlite $SQLITE_VER ==================="
 wget http://sqlite.org/2018/sqlite-autoconf-3220000.tar.gz
 tar xvfz sqlite-autoconf-3220000.tar.gz
