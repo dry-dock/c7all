@@ -1,5 +1,5 @@
 #!/bin/bash -e
-MONGO_VERSION=4.0.5
+MONGO_VERSION=4.0.6
 echo "================= Installing Mongodb "$MONGO_VERSION" ==================="
 echo "[mongodb-org-4.0]
 name=MongoDB Repository
