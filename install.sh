@@ -14,7 +14,7 @@ echo "================= Adding mysql cnf ==================="
 cd /c7all && cp -rf my.cnf /etc/my.cnf
 mysqld --initialize-insecure
 
-POSTGRES_VERSION=11
+POSTGRES_VERSION=10
 echo "================= Adding PostgreSQL cnf ==================="
 cd /c7all && cp -rf pg_hba.cnf /var/lib/pgsql/"$POSTGRES_VERSION"/data/pg_hba.conf
 
