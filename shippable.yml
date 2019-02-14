@@ -1,0 +1,14 @@
+language: none 
+
+services:
+  - postgres
+
+build:
+  pre_ci:
+    - docker build -t=drydock/c7all:dev .
+  pre_ci_boot:
+    image_name: drydock/c7all
+    image_tag: dev
+    pull: false
+  ci:
+    - psql --version
