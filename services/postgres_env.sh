@@ -10,11 +10,11 @@ if [ -z "$SHIPPABLE_POSTGRES_PORT" ]; then
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_VERSION" ]; then
-  export SHIPPABLE_POSTGRES_VERSION="11";
+  export SHIPPABLE_POSTGRES_VERSION="10";
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_BINARY" ]; then
-  export SHIPPABLE_POSTGRES_BINARY="/usr/pgsql-11/bin/postgres";
+  export SHIPPABLE_POSTGRES_BINARY="/usr/pgsql-10/bin/postgres";
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_CMD" ]; then
