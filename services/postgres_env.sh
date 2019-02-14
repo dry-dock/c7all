@@ -14,11 +14,11 @@ if [ -z "$SHIPPABLE_POSTGRES_VERSION" ]; then
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_BINARY" ]; then
-  export SHIPPABLE_POSTGRES_BINARY="/usr/pgsql-10/bin/postgres";
+  export SHIPPABLE_POSTGRES_BINARY="/usr/pgsql-11/bin/postgres";
 fi
 
 if [ -z "$SHIPPABLE_POSTGRES_CMD" ]; then
-  export SHIPPABLE_POSTGRES_CMD="sudo -u postgres /usr/pgsql-10/bin/pg_ctl -D /var/lib/pgsql/data start";
+  export SHIPPABLE_POSTGRES_CMD="sudo -u postgres /usr/pgsql-11/bin/pg_ctl -D /var/lib/pgsql/data start";
 fi
 
 # End service ENV variables
