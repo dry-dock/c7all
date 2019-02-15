@@ -10,7 +10,7 @@ Available Services :
 5. mongodb 4.0.6
 6. mysql 5.7.25
 7. neo4j 3.5.3
-8. postgres 11.1
+8. postgres 11.11
 9. rabbitmq 3.6.15
 10. redis 5.0.3
 12. riak 2.2.3

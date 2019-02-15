@@ -49,7 +49,7 @@ elif [ "$service_cmd" = 'stop' ]
 then
   echo "================= Stopping postgres ==================="
   printf "\n"
-  sudo -u postgres /usr/pgsql-10/bin/pg_ctl -D /var/lib/pgsql/data stop
+  sudo -u postgres /usr/pgsql-11/bin/pg_ctl -D /var/lib/pgsql/data stop
   echo "service postgresql killed"
   printf "\n\n"
 fi
